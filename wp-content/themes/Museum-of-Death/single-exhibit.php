@@ -74,9 +74,38 @@
                             
                         <p><?php the_field('exhibit_date'); ?></p>
                            <p><?php the_field('exhibit_description'); ?></p>
-                              <p><?php the_field('image_1'); ?></p>
-                                 <p><?php the_field('image_2'); ?></p>
-                                    <p><?php the_field('image_3'); ?></p>
+                           <?php 
+
+$image_1 = get_field('image_1');
+
+if( !empty($image_1) ): ?>
+
+	<img src="<?php echo $image_1['url']; ?>" alt="<?php echo $image_1['alt']; ?>" />
+
+<?php endif; ?>
+                           
+  <?php 
+
+$image_2 = get_field('image_2');
+
+if( !empty($image_2) ): ?>
+
+	<img src="<?php echo $image_2['url']; ?>" alt="<?php echo $image_2['alt']; ?>" />
+
+<?php endif; ?>
+
+
+  <?php 
+
+$image_3 = get_field('image_3');
+
+if( !empty($image_3) ): ?>
+
+	<img src="<?php echo $image_3['url']; ?>" alt="<?php echo $image_3['alt']; ?>" />
+
+<?php endif; ?>
+
+
 
                             <!-- COMMENTS -->
                             <?php comments_template(); ?>

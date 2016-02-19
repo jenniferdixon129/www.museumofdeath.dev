@@ -1,24 +1,24 @@
 <?php
 /**
- * Template Name: redpage
+ * Template Name:Home Page
  *
  * @package WordPress
- * @subpackage canyon
- * @since Twenty Fourteen 1.0
+ * @subpackage cannyon
+ * @since cannyon 1.0
  */
 
 get_header(); ?>
 
-<div id="main-content" class="main-content">
+<div id="main-content" class="main-content red">
 
 <?php
-	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
+	if ( is_front_page() && _has_featured_posts() ) {
 		// Include the featured content template.
 		get_template_part( 'featured-content' );
 	}
 ?>
 
-	<div id="primary" class="content-area red">
+	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.
