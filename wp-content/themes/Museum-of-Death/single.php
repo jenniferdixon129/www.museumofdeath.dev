@@ -23,6 +23,8 @@
                             the_post();
                 ?>
                             <article <?php post_class(); ?>>
+                             <!-- CONTENT -->
+                                <?php the_content(); ?>
 
                                 <!-- TITLE -->
                                 <h1 class="post-title"><?php the_title(); ?></h1>
@@ -54,8 +56,7 @@
                                     }
                                 ?>
 
-                                <!-- CONTENT -->
-                                <?php the_content(); ?>
+                               
 
                                 <div class="clearfix"></div>
 
