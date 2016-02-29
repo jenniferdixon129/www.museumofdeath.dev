@@ -38,9 +38,12 @@
                                     $mythemes_logo_src          = esc_url( get_theme_mod( 'mythemes-logo' , get_template_directory_uri() . '/media/_frontend/img/logo.png' ) );
                                     $mythemes_logo_class        = empty( $mythemes_logo_src ) ? 'hidden' : '';
 
+
+                                 
                                     /* HEADER TEXT */
                                     $mythemes_text_class        = !empty( $mythemes_logo_src ) ? 'hidden' : '';
                                 }
+                                
 
                                 /* HEADER FRONTEND */
                                 else{

@@ -22,12 +22,15 @@
                         while( have_posts() ){
                             the_post();
                 ?>
-                            <article <?php post_class(); ?>>
+                                    <!-- TITLE -->
+                                <h1 class="post-title astyle"><?php the_title(); ?></h1>
+                                
+                            <article <?php post_class(); ?>
+                            
                              <!-- CONTENT -->
-                                <?php the_content(); ?>
-
-                                <!-- TITLE -->
-                                <h1 class="post-title"><?php the_title(); ?></h1>
+                                <div class="anotherstyle"><?php the_content(); ?></div>
+                                
+            
                           
                                 <!-- TOP META : AUTHOR / TIME / COMMENTS -->
                                 <?php get_template_part( 'templates/meta/top' ); ?>

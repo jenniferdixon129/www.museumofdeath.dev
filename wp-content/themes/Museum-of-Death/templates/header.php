@@ -92,7 +92,7 @@
 
                         /* HEADER TITLE */
                         if( $header_title ){
-                            echo '<a class="header-title ' . esc_attr( $header_title_class ) . '" href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( $title_label . ' - ' . $description_label ) . '">';
+                            echo '<a class="header-title anewfont' . esc_attr( $header_title_class ) . '" href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( $title_label . ' - ' . $description_label ) . '">';
                             echo esc_html( $title_label );
                             echo '</a>';
                         }

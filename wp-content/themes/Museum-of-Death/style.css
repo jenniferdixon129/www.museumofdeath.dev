@@ -11,6 +11,21 @@
 
  /* == Add your own styles below this line ==
 --------------------------------------------*/
-.red {color:#000000 !important;
+@import url(https://fonts.googleapis.com/css?family=Trochut:400,400italic);
+
+.red {color:#000000;
 background-color:#390303;
 }
+
+.astyle {color:blue;}
+
+.anotherstyle p {color:red !important;}
+
+//*Header Font Over Image**//
+
+a.header-title.anewfont {font-family: "Trochut", "Times New Roman" !important;
+font-size:300%;}
+
+div.mythemes-header a.header-title {font-family: "Trochut","Times New Roman" !important;
+font-size:300%;}
+

@@ -26,7 +26,7 @@
 
             if( $breadcrumbs ){
         ?>
-                <div class="red mythemes-page-header <?php echo esc_attr( $classes ); ?>">
+                <div class="mythemes-page-header <?php echo esc_attr( $classes ); ?>">
 
                     <div class="container">
                         <div class="row">

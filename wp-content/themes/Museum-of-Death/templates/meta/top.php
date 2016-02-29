@@ -6,12 +6,9 @@
         <div class="mythemes-top-meta meta">
 
             <!-- GET FIRST 2 CATEGORIES -->
-            <?php the_category(); ?>
+            <div class="anotherstyle"><?php the_category(); ?></div>
 
- <!-- AUTHOR -->
-            <?php $name = get_the_author_meta( 'display_name' , $post -> post_author ); ?>
-            <a class="author" href="<?php echo esc_url( get_author_posts_url( $post-> post_author ) ); ?>" title="<?php echo sprintf( __( 'Writed by %s' , 'cannyon' ) , esc_attr( $name ) ); ?>"><?php echo sprintf( __( 'by %s' , 'cannyon' ) , esc_html( $name ) ); ?></a>
-
+ 
             
 
             <!-- DATE -->
@@ -21,6 +18,10 @@
             ?>
             <time datetime="<?php echo esc_attr( $t_time ); ?>"><?php echo sprintf( __( 'on %s' , 'cannyon' ), $u_time, false, $post -> ID, true ); ?></time>
             
+            <!-- AUTHOR -->
+            <?php $name = get_the_author_meta( 'display_name' , $post -> post_author ); ?>
+            <a class="author" href="<?php echo esc_url( get_author_posts_url( $post-> post_author ) ); ?>" title="<?php echo sprintf( __( 'Writed by %s' , 'cannyon' ) , esc_attr( $name ) ); ?>"><?php echo sprintf( __( 'by %s' , 'cannyon' ) , esc_html( $name ) ); ?></a>
+
            
             <!-- COMMENTS -->
             <?php
